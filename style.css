@@ -35,7 +35,7 @@ input{
 }
 li{
     min-height: 25px; /* if we just give height some long 'p' content might get hidden */
-    line-height: 15px; /* line height kept 'height-padding' to keep in center */
+    line-height: 25px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -45,10 +45,8 @@ li>p{
     width: 200px;
     overflow-wrap: break-word;
 }
-li>button{
+li>span{
     height: 25px;
-    
 }
-
-
+/* Add clicking effect in icon */
 
