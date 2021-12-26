@@ -16,16 +16,17 @@ function display(value){
     const p = document.createElement('p');
     p.textContent = value;
     li.append(p);
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
-    li.append(deleteButton);
+    const deleteIcon = document.createElement('span');   // Adding Google Icont through JS. Essentially writing <span class="material-icons">delete</span>
+    deleteIcon.textContent = 'delete';
+    deleteIcon.classList.add('material-icons')
+    li.append(deleteIcon);
     list.appendChild(li);
     input.focus();
-    deleteButton.addEventListener('click', function(){
+    deleteIcon.addEventListener('click', function(){
         list.removeChild(li);
     })
 }
 
 // Add a logic that if the text input fills up the box and more, the input box size increases. And resets after input is done.
 // If text is long it should go on newline
-
+// Add an important feature
