@@ -1,1 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+}
+h1, h2, form{
+    text-align: center;
+}
+h1, h2{
+    margin-top: 10px;
+    color: #fff;
+}
+form{
+    margin-top: 40px;
+}
+#add{
+    height: 25px;
+    line-height: 25px;
+    width: 35px;
+    position: relative;
+    left: 20px;
+}
+input{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+}
+#display-box{
+    width: 300px;
+    background-color: antiquewhite;
+    margin: 30px auto;
+}
+li{
+    min-height: 25px; /* if we just give height some long 'p' content might get hidden */
+    line-height: 15px; /* line height kept 'height-padding' to keep in center */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+li>p{
+    text-align: start;
+    width: 200px;
+    overflow-wrap: break-word;
+}
+li>button{
+    height: 25px;
+    
+}
+
+
 
